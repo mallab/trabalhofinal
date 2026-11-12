@@ -1,0 +1,41 @@
+movieId,title,genres
+1,"Matrix, The (1999)",Action|Sci-Fi|Thriller
+2,Star Wars: Episode IV - A New Hope (1977),Action|Adventure|Sci-Fi
+3,Terminator 2: Judgment Day (1991),Action|Sci-Fi
+4,Inception (2010),Action|Crime|Drama|Mystery|Sci-Fi|Thriller
+5,Alien (1979),Horror|Sci-Fi
+6,Mad Max: Fury Road (2015),Action|Adventure|Sci-Fi|Thriller
+7,Interstellar (2014),Sci-Fi|IMAX
+8,Iron Man (2008),Action|Adventure|Sci-Fi
+9,Die Hard (1988),Action|Crime|Thriller
+10,Gladiator (2000),Action|Adventure|Drama
+11,Toy Story (1995),Adventure|Animation|Children|Comedy|Fantasy
+12,Finding Nemo (2003),Adventure|Animation|Children|Comedy
+13,Shrek (2001),Adventure|Animation|Children|Comedy|Fantasy|Romance
+14,"Lion King, The (1994)",Adventure|Animation|Children|Drama|Musical|IMAX
+15,Up (2009),Adventure|Animation|Children|Drama
+16,Spirited Away (2001),Adventure|Animation|Fantasy
+17,Frozen (2013),Adventure|Animation|Comedy|Fantasy|Musical|Romance
+18,"Incredibles, The (2004)",Action|Adventure|Animation|Children|Comedy
+19,Notting Hill (1999),Comedy|Romance
+20,Pretty Woman (1990),Comedy|Romance
+21,Love Actually (2003),Comedy|Drama|Romance
+22,50 First Dates (2004),Comedy|Romance
+23,Amelie (2001),Comedy|Romance
+24,When Harry Met Sally... (1989),Comedy|Romance
+25,Mamma Mia! (2008),Comedy|Musical|Romance
+26,La La Land (2016),Comedy|Drama|Romance
+27,"Godfather, The (1972)",Crime|Drama
+28,Pulp Fiction (1994),Comedy|Crime|Drama|Thriller
+29,"Shawshank Redemption, The (1994)",Crime|Drama
+30,Goodfellas (1990),Crime|Drama
+31,Fight Club (1999),Action|Crime|Drama|Thriller
+32,Se7en (1995),Mystery|Thriller
+33,"Silence of the Lambs, The (1991)",Crime|Horror|Thriller
+34,"Departed, The (2006)",Crime|Drama|Thriller
+35,City of God (2002),Action|Adventure|Crime|Drama|Thriller
+36,"Shining, The (1980)",Horror
+37,Get Out (2017),Horror
+38,"Exorcist, The (1973)",Horror|Mystery
+39,Forrest Gump (1994),Comedy|Drama|Romance|War
+40,Schindler's List (1993),Drama|War
