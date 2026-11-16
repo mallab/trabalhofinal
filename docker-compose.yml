@@ -1,0 +1,36 @@
+# Sobe 2 serviços: o banco (PostgreSQL) e a API
+# Comando: docker compose up --build
+# Depois abre http://localhost:8000/docs
+services:
+  db:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_USER: recsys
+      POSTGRES_PASSWORD: recsys
+      POSTGRES_DB: recsys
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    # não abro a porta 5432 pra fora: só a API acessa o banco, pela rede interna
+    # do Docker (e assim não dá conflito com um Postgres instalado na máquina)
+    # a API só sobe depois que o banco estiver pronto
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U recsys -d recsys"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+
+  api:
+    build: .
+    environment:
+      DATABASE_URL: postgresql+psycopg2://recsys:recsys@db:5432/recsys
+      AUTO_SEED: "true"
+      SVD_COMPONENTS: "20"
+    ports:
+      - "8000:8000"
+    depends_on:
+      db:
+        condition: service_healthy
+    restart: unless-stopped
+
+volumes:
+  pgdata:
